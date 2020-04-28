@@ -4,4 +4,8 @@ declare module '@wordpress/compose' {
 	export function useViewportMatch( viewport: breakpoint, operator?: operator ): boolean;
 }
 
+declare module '@wordpress/i18n' {
+	function sprintf( format: string, ...args: any[] ): string;
+}
+
 export {};
