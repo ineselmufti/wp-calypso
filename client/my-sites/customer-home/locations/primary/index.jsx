@@ -13,6 +13,7 @@ import QuickLinks from 'my-sites/customer-home/cards/actions/quick-links';
 import WpForTeamsQuickLinks from 'my-sites/customer-home/cards/actions/wp-for-teams-quick-links';
 import ConnectAccounts from 'my-sites/customer-home/cards/tasks/connect-accounts';
 import FindDomain from 'my-sites/customer-home/cards/tasks/find-domain';
+import { PerformanceTrackerStop } from 'lib/performance-tracking';
 import config from 'config';
 
 const cardComponents = {
@@ -49,6 +50,7 @@ const Primary = ( { checklistMode, cards } ) => {
 								: null,
 						} )
 				) }
+			<PerformanceTrackerStop />
 		</>
 	);
 };
