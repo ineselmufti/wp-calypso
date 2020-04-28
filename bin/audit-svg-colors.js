@@ -40,6 +40,7 @@ const PALETTE_ILLUSTRATION_COLORS = _.pickBy( PALETTE.colors, ( colorValue, colo
 		_.startsWith( colorName, 'Blue' ) ||
 		_.startsWith( colorName, 'Green' ) ||
 		_.startsWith( colorName, 'Celadon' ) ||
+		_.startsWith( colorName, 'Simplenote Blue' ) ||
 		_.startsWith( colorName, 'WooCommerce Purple' )
 	);
 } );
@@ -68,18 +69,20 @@ const PALETTE_APP_COLOR_VALUES = _.uniq( Object.values( PALETTE_APP_COLORS ) );
 const SVG_IGNORE_PATHS = [
 	// Common logos found in the repository
 	/(?:google-photos|paypal|stripe)(-logo)?\.svg$/,
+	/task-connect-social-accounts\.svg$/,
 
 	// Selected logos from the G-Suite asset directory
 	/images\/g-suite\/logo_/,
 
 	// Credit card and payment gateway logos (the disabled versions are allowed)
 	/upgrades\/cc-(?:amex|diners|discover|jcb|mastercard|unionpay|visa)\.svg$/,
-	/upgrades\/(?:alipay|bancontact|brazil-tef|emergent-paywall|eps|giropay|ideal|netbanking|p24|paypal|paytm|sofort|tef|wechat)\.svg$/,
+	/upgrades\/(?:alipay|bancontact|brazil-tef|emergent-paywall|eps|giropay|ideal|netbanking|ovo|p24|paypal|paytm|sofort|tef|wechat)\.svg$/,
 
 	// Old WooCommerce mascotte
 	/ninja-joy\.svg$/,
 
 	// Specific directories
+	/^apps\/full-site-editing\/full-site-editing-plugin/,
 	/^docs/,
 	/^static\/images\/marketing/,
 	/^static\/images\/me/,
@@ -91,7 +94,8 @@ const SVG_APP_PATHS = [
 	// Color scheme thumbnails
 	/color-scheme-thumbnail-[a-z-]+\.svg$/,
 
-	// Gutenberg images
+	// Screenshots and Gutenberg images
+	/^client\/assets\/images\/customer-home\/illustration/,
 	/^static\/images\/illustrations\/gutenberg/,
 
 	// Plan icons
