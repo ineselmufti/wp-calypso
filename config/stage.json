@@ -63,7 +63,7 @@
 		"jetpack/happychat": true,
 		"jetpack/search-product": true,
 		"jitms": true,
-		"lasagna": false,
+		"lasagna": true,
 		"layout/app-banner": true,
 		"layout/guided-tours": true,
 		"layout/nps-survey-notice": true,
