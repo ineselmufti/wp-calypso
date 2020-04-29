@@ -21,6 +21,7 @@ import {
 	domainManagementDns,
 	domainManagementDomainConnectMapping,
 	domainManagementChangeSiteAddress,
+	domainManagementSecurity,
 } from 'my-sites/domains/paths';
 import { emailManagement } from 'my-sites/email/paths';
 import { type as domainTypes, transferStatus } from 'lib/domains/constants';
@@ -349,12 +350,18 @@ class DomainManagementNavigationEnhanced extends React.Component {
 	}
 
 	getSecurity() {
-		const { selectedSite, translate } = this.props;
+		const { selectedSite, domain, translate } = this.props;
+
+		const { pointsToWpcom } = domain;
+
+		if ( ! pointsToWpcom ) {
+			return null;
+		}
 
 		// NOTE: remember to add translate to the description string once you start working on it
 		return (
 			<DomainManagementNavigationItem
-				path={ domainAddNew( selectedSite.slug ) }
+				path={ domainManagementSecurity( selectedSite.slug, domain.name ) }
 				onClick={ this.handlePickCustomDomainClick }
 				materialIcon="security"
 				text={ translate( 'Review your domain security' ) }
