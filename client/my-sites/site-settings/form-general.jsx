@@ -87,7 +87,7 @@ export class SiteSettingsFormGeneral extends Component {
 			<div className="site-settings__site-options">
 				<div className="site-settings__site-title-tagline">
 					<FormFieldset>
-						<FormLabel htmlFor="blogname">{ translate( 'Site Title' ) }</FormLabel>
+						<FormLabel htmlFor="blogname">{ translate( 'Site title' ) }</FormLabel>
 						<FormInput
 							name="blogname"
 							id="blogname"
@@ -101,7 +101,7 @@ export class SiteSettingsFormGeneral extends Component {
 						/>
 					</FormFieldset>
 					<FormFieldset>
-						<FormLabel htmlFor="blogdescription">{ translate( 'Site Tagline' ) }</FormLabel>
+						<FormLabel htmlFor="blogdescription">{ translate( 'Site tagline' ) }</FormLabel>
 						<FormInput
 							name="blogdescription"
 							type="text"
@@ -190,7 +190,7 @@ export class SiteSettingsFormGeneral extends Component {
 
 		return (
 			<FormFieldset className="site-settings__has-divider">
-				<FormLabel htmlFor="blogaddress">{ translate( 'Site Address' ) }</FormLabel>
+				<FormLabel htmlFor="blogaddress">{ translate( 'Site address' ) }</FormLabel>
 				<div className="site-settings__blogaddress-settings">
 					<FormInput
 						name="blogaddress"
@@ -552,7 +552,7 @@ export class SiteSettingsFormGeneral extends Component {
 
 		return (
 			<FormFieldset>
-				<FormLabel htmlFor="blogtimezone">{ translate( 'Site Timezone' ) }</FormLabel>
+				<FormLabel htmlFor="blogtimezone">{ translate( 'Site timezone' ) }</FormLabel>
 
 				<Timezone
 					selectedZone={ fields.timezone_string }
@@ -721,7 +721,7 @@ export class SiteSettingsFormGeneral extends Component {
 					isSaving={ isSavingSettings }
 					onButtonClick={ handleSubmitForm }
 					showButton
-					title={ translate( 'Site Profile' ) }
+					title={ translate( 'Site profile' ) }
 				/>
 				<Card>
 					<form>
@@ -737,7 +737,7 @@ export class SiteSettingsFormGeneral extends Component {
 
 				{ ! siteIsJetpack && (
 					<div className="site-settings__footer-credit-container">
-						<SettingsSectionHeader title={ translate( 'Footer Credit' ) } />
+						<SettingsSectionHeader title={ translate( 'Footer credit' ) } />
 						<CompactCard className="site-settings__footer-credit-explanation">
 							<p>
 								{ preventWidows(

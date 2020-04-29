@@ -65,7 +65,7 @@ const MarketingToolsFeatureButtonWithPlanGate: FunctionComponent<
 
 	return (
 		<Button compact onClick={ handleUpgradeClick }>
-			{ translate( 'Upgrade To %(plan)s', {
+			{ translate( 'Upgrade to %(plan)s', {
 				args: {
 					plan: planTitle,
 				},
