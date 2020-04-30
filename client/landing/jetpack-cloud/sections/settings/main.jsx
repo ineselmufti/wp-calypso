@@ -57,7 +57,12 @@ class SettingsPage extends Component {
 							</div>
 							<div>
 								{ translate(
-									'Enter your server credentials to enable one-click restores for Backups. Find your server credentials.'
+									'Enter your server credentials to enable one-click restores for Backups. {{a}}Find your server credentials{{/a}}.',
+									{
+										components: {
+											a: <a href="https://jetpack.com/support/adding-credentials-to-jetpack/" />,
+										},
+									}
 								) }
 							</div>
 						</div>
