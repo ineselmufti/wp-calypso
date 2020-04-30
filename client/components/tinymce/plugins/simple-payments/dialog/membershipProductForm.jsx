@@ -24,6 +24,8 @@ import { authorizeStripeAccount } from 'state/memberships/connected-accounts/act
 import getEditedSimplePaymentsStripeAccount from 'state/selectors/get-edited-simple-payments-stripe-account';
 import getMembershipsConnectedAccounts from 'state/selectors/get-memberships-connected-accounts';
 
+import 'state/form/init';
+
 export const REDUX_FORM_NAME = 'membershipsForm';
 
 // Export some selectors that are needed by the code that submits the form
