@@ -251,3 +251,11 @@ function load_block_patterns() {
 	Block_Patterns::get_instance();
 }
 add_action( 'plugins_loaded', __NAMESPACE__ . '\load_block_patterns' );
+
+/**
+ * Load WPCOM block editor nav sidebar
+ */
+function load_wpcom_block_editor_sidebar() {
+	require_once __DIR__ . '/wpcom-block-editor-nav-sidebar/class-wpcom-block-editor-nav-sidebar.php';
+}
+add_action( 'plugins_loaded', __NAMESPACE__ . '\load_wpcom_block_editor_sidebar' );
