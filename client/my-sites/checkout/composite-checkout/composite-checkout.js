@@ -310,6 +310,7 @@ export default function CompositeCheckout( {
 				onContactDetailsChange={ updateDomainContactFields }
 				shouldForceRenderOnPropChange={ true }
 				getIsFieldDisabled={ getIsFieldDisabled }
+				isManaged={ true }
 			/>
 		);
 	};
