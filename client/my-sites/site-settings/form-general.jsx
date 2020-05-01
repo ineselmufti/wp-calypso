@@ -128,7 +128,7 @@ export class SiteSettingsFormGeneral extends Component {
 
 		return (
 			<FormFieldset>
-				<FormLabel htmlFor="wpversion">{ translate( 'WordPress Version' ) }</FormLabel>
+				<FormLabel htmlFor="wpversion">{ translate( 'WordPress version' ) }</FormLabel>
 				<FormInput
 					name="wpversion"
 					id="wpversion"

@@ -390,7 +390,7 @@ export class PlansFeaturesMain extends Component {
 						document.location.search
 					) }
 				>
-					{ translate( 'Blogs and Personal Sites' ) }
+					{ translate( 'Blogs and personal sites' ) }
 				</SegmentedControl.Item>
 
 				<SegmentedControl.Item
@@ -400,7 +400,7 @@ export class PlansFeaturesMain extends Component {
 						document.location.search
 					) }
 				>
-					{ translate( 'Business Sites and Online Stores' ) }
+					{ translate( 'Business sites and online stores' ) }
 				</SegmentedControl.Item>
 			</SegmentedControl>
 		);
